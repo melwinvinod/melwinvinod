@@ -1,3 +1,4 @@
+#install all these first
 sudo apt install pip3
 pip3 install fastapi
 sudo apt install uvicorn
