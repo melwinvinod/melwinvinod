@@ -22,3 +22,5 @@ def return_data(random1: str):
 	for i in data:
 		if i['name'] == random1:
 			return i
+		else:
+			return "Not Found"
