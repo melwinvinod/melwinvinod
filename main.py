@@ -21,6 +21,6 @@ def func1():
 def return_data(random1: str):
 	for i in data:
 		if i['name'] == random1:
-			return i
+			return "Happy Birthday,"+i['name']+"!"
 		else:
 			return "Not Found"
