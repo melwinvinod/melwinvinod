@@ -1,0 +1,7 @@
+sudo apt install pip3
+pip3 install fastapi
+sudo apt install uvicorn
+pip install uvicorn
+
+#Run the server
+uvicorn main:app --reload --host 0.0.0.0 --port 8080
