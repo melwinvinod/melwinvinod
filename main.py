@@ -14,11 +14,11 @@ data=[{
 }]
 
 @app.get("/")
-def func1():
+def root():
 	return data
 
-@app.get("/{random1}")
-def return_data(random1: str):
+@app.get("/{name}")
+def return_data_based_on_name(key: str):
 	for i in data:
-		if i['name'] == random1:
+		if i['name'] == key:
 			return i
