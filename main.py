@@ -33,5 +33,5 @@ def func1():
 @app.get("/{random1}")
 def return_anme(random1: int):
 	json_data = json.loads(data)
-	jsonpath_expr = parse('data[*]')
+	jsonpath_expr = parse('data[0]')
 	return jsonpath_expr
