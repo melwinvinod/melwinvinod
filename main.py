@@ -22,3 +22,5 @@ def return_data_based_on_name(name: str):
     for i in data:
         if i['name']==name:
             return i
+    else:
+        return {"data":"Not Found"}
