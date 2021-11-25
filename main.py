@@ -15,10 +15,10 @@ data=[{
 
 @app.get("/")
 def root():
-	return data
+    return data
 
 @app.get("/{name}")
-def return_data_based_on_name(key: str):
-	for i in data:
-		if i['name'] == key:
-			return i
+def return_data_based_on_name(name: str):
+    for i in data:
+        if i['name']==name:
+            return i
